@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/img/netflix-icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/login.css">
+
+    <title>Netflix-clone</title>
 </head>
+
 <body>
-    @yield('contenido')
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="container">
+        <header>
+            <img src="./assets/img/logo.png" alt="Logo">
+        </header>
+
+        @yield('contenido')
+
+        <footer>
+            <div class="container-footer">
+                <p>Dúvidas? <a href="">Ligue 0800-761-4631</a></p>
+
+                <div class="listas">
+                    <ul>
+                        <li><a href="">Perguntas frequentes</a></li>
+                        <li><a href="">Informações corporativas</a></li>
+                        <li><a href="">Preferências de cookies</a></li>
+                        <li><a href="">Centro de ajuda</a></li>
+                        <li><a href="">Privacidade</a></li>
+                        <li><a href="">Termos de uso</a></li>
+                    </ul>
+                </div>
+
+                <select>
+                    <option>Português</option>
+                    <option>Inglês</option>
+                </select>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/login.js"></script>
+
 </body>
 </html>
+
